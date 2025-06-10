@@ -46,7 +46,8 @@ def main(n):
     for key, value in knowledge.iteritems():
         value = most_common(value, 5)
         value = ', '.join(value)
-        print '{0}, {1}'.format(key, value)
+        print 
+        '{0}, {1}'.format(key, value)
 
 
 def is_numeric(n):

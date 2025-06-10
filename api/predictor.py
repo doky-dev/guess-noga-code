@@ -59,7 +59,7 @@ class Predictor(object):
                 # print(self.knowledge[ngram])
                 nogas.append(self.knowledge[ngram])
             else:
-                print "nothing found"
+                print("nothing found")
 
         flat_list = {}
         for sublist in nogas:

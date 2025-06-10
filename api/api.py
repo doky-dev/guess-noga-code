@@ -36,7 +36,8 @@ class Predict(Resource):
         else:
             factory = PredictorFactory(data['description'])
             predicted = factory.run()
-            print predicted
+            print 
+            predicted
             return predicted
 
 
@@ -51,7 +52,8 @@ if __name__ == '__main__':
 
     for n, db_name in ngrams.iteritems():
         predictor[n] = Predictor(db_name, n)
-        print '{0}-grams db loaded.'.format(n)
+        print 
+        '{0}-grams db loaded.'.format(n)
 
     app = Flask(__name__)
     api = Api(app)

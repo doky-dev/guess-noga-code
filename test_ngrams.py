@@ -23,7 +23,8 @@ class SentenceNoga(Sentence):
             if ngram in self.knowledge:
                 nogas.append(self.knowledge[ngram])
             else:
-                print "nothing found"
+                print 
+                "nothing found"
 
         flat_list = {}
         for sublist in nogas:
@@ -57,10 +58,14 @@ def main(n):
         predicted = predictor.run()
         predicted = [x for x in predicted if x.isdigit()]
 
-        print description
-        print nogas
-        print predicted[:3]
-        print '-'
+        print 
+        description
+        print 
+        nogas
+        print 
+        predicted[:3]
+        print 
+        '-'
         if len(predicted) > 0 and len(nogas) > 0:
             proba = list(set(nogas).intersection(predicted[:3]))
             if len(proba) > 0:
@@ -70,10 +75,12 @@ def main(n):
                 first_matches += 1
             total += 1
 
-    print 'First predicted NOGA is a match: {0}/{1} ({2}%)'.format(
+    print 
+    'First predicted NOGA is a match: {0}/{1} ({2}%)'.format(
         first_matches, total, str(round(percentage(first_matches, total), 2)))
 
-    print 'One NOGA from group of first 3 predicted is a match: {0}/{1} ({2}%)'.format(
+    print 
+    'One NOGA from group of first 3 predicted is a match: {0}/{1} ({2}%)'.format(
         group_of_three_matches, total, str(round(percentage(group_of_three_matches, total), 2))
     )
 
